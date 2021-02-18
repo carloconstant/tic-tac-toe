@@ -1,0 +1,44 @@
+@import '~bootstrap/scss/bootstrap';
+
+.board{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: black;
+  background-color: blue;
+  padding: 1px;
+
+}
+.box {
+  align-items: center;
+  background-color: white;
+  border: 10px solid black;
+  color: black;
+}
+// .position-1{
+//   border-right:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-2{
+//   border-bottom:20px solid black;
+// }
+// .position-3{
+//   border-left:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-4{
+//   border-right:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-5{
+//   border-bottom:20px solid black;
+// }
+// .position-6{
+//   border-left:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-7{
+//   border-right:20px solid black;
+// }
+// .position-8{
+//   border-right:20px solid black;
+// }

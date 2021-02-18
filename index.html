@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>Tic tac toe</h1>
+      <main>
+
+        <form id= "sign-in">
+          <h2>sign in</h2>
+          <input name="credentials[email]" type="text" placeholder="an@example.email">
+          <input name="credentials[password]" type="password" placeholder="an example password">
+          <button type ="submit">submit</button>
+        </form>
+        <hr>
+
+        <form id= "sign-up">
+          <h2>sign up</h2>
+          <input  type="text" name="credentials[email]" placeholder="Enter Email Here">
+          <input name="credentials[password]" type="password" placeholder="Password">
+          <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
+          <button type ="submit">submit</button>
+        </form>
+        <form id = "change-password">
+          <h2>Change Password</h2>
+          <input name="passwords[old]" type="password" placeholder="old password">
+          <input name="passwords[new]" type="password" placeholder ="new password">
+          <button type ="submit">submit</button>
+        </form>
+        <form id = "sign-out">
+          <button type="submit">Sign Out!</button>
+        </form>
+        <hr>
+        <div class = "board">
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">top left
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">top mid
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">top right
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">mid left
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">mid mid
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">mid right
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">bot left
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">bot mid
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">bot right
+              <button type="submit">here</button>
+              </div>
+
+        </div>
+      <hr>
+      <div id='error-message'></div>
+      <div class="replay">
+        <button type="submit">replay</button>
+      </div>
+      <!-- <div id=''></div> -->
+      </main>
+    </body>
+</html>

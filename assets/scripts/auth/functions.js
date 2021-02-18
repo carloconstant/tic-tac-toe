@@ -20,6 +20,35 @@ const onSignIn = function (event) {
     .then(ui.signInSuccess)
     .catch(ui.signInFailure)
 }
+const onChangePassword = function (event) {
+  event.preventDefault()
+  console.log('changed password')
+
+  const data = getFormFields(this)
+  api.changePassword(data)
+    .then(ui.changePasswordSuccess)
+    .catch(ui.changePasswordFailure)
+}
+const onSignOut = function (event) {
+  event.preventDefault()
+
+  const data = getFormFields(this)
+  api.signOut(data)
+    .then(ui.signOut)
+
+}
+const onReplay = function (event) {
+  event.preventDefault()
+
+  const data = getFormFields(this)
+    .then(ui.replay)
+}
+// const onClick = function (event) {
+//   event.preventDefault()
+//
+//   const data = getFormFields(this)
+//
+// }
 
 // const onShowGame = function (event) {
 //   // by default, a form refreshes the page. We do this to prevent the
@@ -38,5 +67,8 @@ const onSignIn = function (event) {
 // }
 module.exports = {
   onSignUp,
-  onSignIn
+  onSignIn,
+  onChangePassword,
+  onSignOut,
+  onReplay
 }

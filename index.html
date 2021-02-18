@@ -14,59 +14,76 @@
     <body>
       <h1>Tic tac toe</h1>
       <main>
-        <h2>sign in</h2>
+
         <form id= "sign-in">
+          <h2>sign in</h2>
           <input name="credentials[email]" type="text" placeholder="an@example.email">
           <input name="credentials[password]" type="password" placeholder="an example password">
           <button type ="submit">submit</button>
         </form>
         <hr>
-        <h2>sign up</h2>
+
         <form id= "sign-up">
+          <h2>sign up</h2>
           <input  type="text" name="credentials[email]" placeholder="Enter Email Here">
           <input name="credentials[password]" type="password" placeholder="Password">
           <input name="credentials[password_confirmation]" type="password" placeholder="Confirm Password">
           <button type ="submit">submit</button>
         </form>
-        <!-- <div class = "board">
-          <div class = "box">
-            <div class ="position-1">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">top right</div>
-            </div>
-            <div class ="position-2">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">top mid</div>
-            </div>
-            <div class ="position-3">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">top left</div>
-            </div>
-            <div class ="position-4">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">mid left</div>
-            </div>
-            <div class ="position-5">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">mid mid</div>
-            </div>
-            <div class ="position-6">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">mid right</div>
-            </div>
-            <div class ="position-7">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">bot left</div>
-            </div>
-            <div class ="position-8">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">bot mid</div>
-            </div>
-            <div class ="position-9">
-              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">bot right</div>
-            </div>
+        <form id = "change-password">
+          <h2>Change Password</h2>
+          <input name="passwords[old]" type="password" placeholder="old password">
+          <input name="passwords[new]" type="password" placeholder ="new password">
+          <button type ="submit">submit</button>
+        </form>
+        <form id = "sign-out">
+          <button type="submit">Sign Out!</button>
+        </form>
+        <hr>
+        <div class = "board">
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">top left
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">top mid
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">top right
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">mid left
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">mid mid
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">mid right
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">bot left
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">bot mid
+              <button type="submit">here</button>
+              </div>
+
+              <div class = "col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 box">bot right
+              <button type="submit">here</button>
+              </div>
+
         </div>
-      </div> -->
       <hr>
-      <h2>Change Password</h2>
-      <form id = "change-password">
-        <input name="passwords[old]" type="password" placeholder="old password">
-        <input name="passwords[new]" type="password" placeholder ="new password">
-        <button type ="submit">submit</button>
-      </form>
       <div id='error-message'></div>
+      <div class="replay">
+        <button type="submit">replay</button>
+      </div>
       <!-- <div id=''></div> -->
       </main>
     </body>

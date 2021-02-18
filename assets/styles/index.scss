@@ -1,69 +1,44 @@
 @import '~bootstrap/scss/bootstrap';
 
 .board{
-  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
   color: black;
-  width: 500px;
-  height: 500px;
   background-color: blue;
+  padding: 1px;
 
 }
-.position-1{
-  border-right:20px solid black;
-  border-bottom:20px solid black;
+.box {
+  align-items: center;
+  background-color: white;
+  border: 10px solid black;
+  color: black;
 }
-.position-2{
-  border-bottom:20px solid black;
-}
-.position-3{
-  border-left:20px solid black;
-  border-bottom:20px solid black;
-}
-.position-4{
-  border-right:20px solid black;
-  border-bottom:20px solid black;
-}
-.position-5{
-  border-bottom:20px solid black;
-}
-.position-6{
-  border-left:20px solid black;
-  border-bottom:20px solid black;
-}
-.position-7{
-  border-right:20px solid black;
-}
-.position-8{
-  border-right:20px solid black;
-}
-.position-1,.position-4,.position-7{
-  width: 10px;
-  height: 10px;
-  float:left;
-}
-.position-2,.position-5,.position-8{
-  width:10px;
-  height: 10px;
-  display: inline-block;
-  margin: 0 auto;
-}
-.position-3,.position-6,.position-9{
-  width:10px;
-  height:10px;
-  float:right;
-}
-.position-1,.position-2,.position-3{
-  width: 10px;
-  height: 10px;
-  flex:top;
-}
-.position-4,.position-5,.position-6{
-  width: 10px;
-  height: 10px;
-  display:inline-block;
-}
-.position-7,.position-8,.position-9{
-  width: 10px;
-  height: 10px;
-  flex: bottom;
-}
+// .position-1{
+//   border-right:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-2{
+//   border-bottom:20px solid black;
+// }
+// .position-3{
+//   border-left:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-4{
+//   border-right:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-5{
+//   border-bottom:20px solid black;
+// }
+// .position-6{
+//   border-left:20px solid black;
+//   border-bottom:20px solid black;
+// }
+// .position-7{
+//   border-right:20px solid black;
+// }
+// .position-8{
+//   border-right:20px solid black;
+// }

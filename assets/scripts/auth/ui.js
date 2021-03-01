@@ -1,26 +1,26 @@
 const store = require('./../store')
 
-const signUpSuccess = function (response) {
+const signUpSuccess = function (data) {
   $('#error-message').text('Thank you for signing up')
   $('#sign-up').trigger('reset')
 }
-const signUpFailure = function (response) {
+const signUpFailure = function (data) {
   $('#error-message').text('Sign up failed, try again')
 }
-const signInSuccess = function (response) {
-  store.user = response.user
+const signInSuccess = function (data) {
+  store.user = data.user
 
   $('#error-message').text('Signed in!')
   $('#sign-in').trigger('reset')
 
-  $('.board').show()
+  $('#board').show()
   $('#change-password').show()
   $('#sign-out').show()
-  $('.replay').show()
+  $('#replay').show()
   $('#sign-up').hide()
   $('#sign-in').hide()
 }
-const signInFailure = function (response) {
+const signInFailure = function (data) {
   $('#error-message').text('Sign in failed, try again')
 }
 const changePasswordSuccess = function () {
@@ -34,12 +34,13 @@ const changePasswordFailure = function (error) {
   $('#error-message').text('that was not your password')
   $('#error-message').removeClass()
   $('#error-message').addClass()
+  console.error('you made a mistake ', error)
 }
 const signOut = function (event) {
   $('#error-message').text('you signed out')
   $('#sign-out').trigger('reset')
 
-  $('.board').hide()
+  $('#board').hide()
   $('#change-password').hide()
   $('#sign-up').show()
   $('#sign-in').hide()
@@ -69,7 +70,7 @@ const onIndexSuccess = function (data) {
 const onIndexFailure = function (error) {
   $('#error-message').text('Error on getting games')
   $('#error-message').removeClass()
-  $('#message').addClass('failure')
+  $('#error-message').addClass('failure')
   console.error('onIndexFailure ran. Error is :', error)
 }
 
@@ -87,11 +88,11 @@ const onShowFailure = function (error) {
   console.error('onShowFailure ran. Error is :', error)
 }
 
-const replay = function (event) {
-  let i
-  i++
-  $('#error-message').text(i)
-}
+// const replay = function (event) {
+//   let i
+//   i++
+//   $('#error-message').text(i)
+// }
 module.exports = {
   onIndexSuccess,
   onIndexFailure,
@@ -103,7 +104,7 @@ module.exports = {
   changePasswordSuccess,
   changePasswordFailure,
   signOut,
-  replay,
   onShowFailure,
+  onCreateSuccess,
   onCreateFailure
 }

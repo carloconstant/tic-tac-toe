@@ -1,18 +1,37 @@
 @import '~bootstrap/scss/bootstrap';
-
-.board{
+body{
+  background:purple;
+  border-radius: 20px;
+  border-color: black;
+  font-color: black;
+}
+#board{
+  width: 350px;
+  height: 350px;
+}
+.row{
   display: grid;
   grid-template-columns: auto auto auto;
   color: black;
   background-color: blue;
-  padding: 1px;
-
+  padding: 10px;
 }
+ // >div {
+ //   display: flex;
+ //   justify-content: center;
+ //   align-items: center;
+ //   background-color: green;
+ //   min-width: 120px;
+ //   height: 100%;
+ // }
 .box {
-  align-items: center;
+  display: flex;
   background-color: white;
-  border: 10px solid black;
+  // border: 15px solid black;
   color: black;
+  padding: 0px;
+  height: 110px;
+  width: 110px;
 }
 // .position-1{
 //   border-right:20px solid black;

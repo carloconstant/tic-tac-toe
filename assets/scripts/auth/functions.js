@@ -1,3 +1,4 @@
+'use strict'
 const api = require('./api')
 const ui = require('./ui')
 
@@ -37,12 +38,7 @@ const onSignOut = function (event) {
     .then(ui.signOut)
 
 }
-const onReplay = function (event) {
-  event.preventDefault()
 
-  const data = getFormFields(this)
-    .then(ui.replay)
-}
 // const onClick = function (event) {
 //   event.preventDefault()
 //
@@ -69,6 +65,5 @@ module.exports = {
   onSignUp,
   onSignIn,
   onChangePassword,
-  onSignOut,
-  onReplay
+  onSignOut
 }

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl "https://tic-tac-toe-api-production.herokuapp.com/games/:id" \
+curl "https://tic-tac-toe-api-production.herokuapp.com/games/${ID}" \
   --include \
   --request GET \
   --header "Content-Type: application/json" \
